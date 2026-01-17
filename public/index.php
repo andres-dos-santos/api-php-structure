@@ -1,8 +1,6 @@
 <?php
 
-header('Content-Type: application/json');
+require_once __DIR__ . '/../src/autoload.php';
+require_once __DIR__ . '/../src/Routes/index.php';
 
-echo json_encode([
-    'status' => 'ok',
-    'message' => 'API PHP puro rodando'
-]);
+header('Content-Type: application/json');
